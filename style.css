@@ -1,0 +1,127 @@
+.projectBody{
+  width: 90% !important;
+  margin: 32px auto !important; 
+  padding : 0px 24px 24px 24px !important; /* top right bottom left */
+  background: black !important;
+  border-radius: 10px !important;
+}
+.Header {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.Header div{
+  width: 10%;
+  min-width: 150px;
+  font-size: 30px;
+  background: #1b1811;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+.Header div p{
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+.projectMenu h3{
+  padding-left: 5%;
+}
+
+.projectMenu p{
+  padding-left: 5%;
+}
+
+.projectBody .ulMidia{
+  align-items: center !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  list-style-type: none !important;
+  grid-gap: 24px !important;
+}
+.projectBody ul{
+  margin-top: 24px !important;
+  list-style-type: none !important;
+}
+.projectBody .ulMidia li{
+  position: relative !important;
+}
+.projectBody .ulMidia img{
+  margin-top: 24px !important;
+  width: 100% !important;
+  height: 200px !important;
+  border-radius: 15px !important;
+}
+
+@media (max-width: 600px) {                  
+  .projectBody .ulMidia{
+    grid-template-columns: 1fr;
+} 
+  .Header h2{
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  .Header .spanButton{
+    height: 20px;
+    width: 20px;
+  }
+  .projectBody .ulTech li p{
+    width: 50px;
+  
+  }
+  .projectBody{
+    width: 100%;
+  }
+}
+
+.ulConhecimentos li{
+  background-color: black;
+}
+
+.mobile-button {
+  width: 100% !important;
+  margin: 0 0 15px 0 !important;
+  display: none !important;
+}
+
+@media (max-width: 1100px) {                  
+  .projectBody .ulMidia{
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+.projectBody .ulTech li p{
+  width: 150px !important;
+
+}
+
+}
+
+@media (max-width: 895px) {                  
+  .projectBody .ulMidia{
+    grid-template-columns: 1fr 1fr !important;
+}
+.projectBody .ulTech li p{
+  width: 100px !important;
+
+}
+h2{
+  font-size: 22px !important;
+}
+}
+
+@media (max-width: 600px) {                  
+  .projectBody .ulMidia{
+    grid-template-columns: 1fr !important;
+} 
+  .pc-button{
+    display: none !important;
+  }
+
+  .mobile-button{
+    display: block !important;
+  }
+
+  .projectBody{
+    width: 100% !important;
+  }
+}

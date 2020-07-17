@@ -1,7 +1,14 @@
 <html>
+  <header>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </header>
+  <body>
   <div class="ProfileProject">
     <div class="projectBody">
-      <div class="Header">
+      <div class="Header" >
         <div>
          <p>Sobre</p>
         </div>
@@ -37,46 +44,236 @@
         </div>
       </div>
       
-            <div key={project.id} class="container mb-5">
+            <div class="container mb-5">
               <div class="row">
 
                 <div class="col-6 projectMenu">
-                <a class="btn btn-primary  mt-3 float-right" href="https://github.com/rafaelmesquita-ceara"role="button">Pagina no GitHub</a>
-                  <h2>{project.name}</h2>
+                  <div class="row">
+                    <h2 class="col-9">AspNetCoreAPI</h2>
+                    <a class="btn btn-primary col-3 pc-button" href="https://github.com/rafaelmesquita-ceara/AspNetCoreAPI"role="button">Pagina no GitHub</a>
+                  </div>
+                
                   
                   <h3>Descrição</h3>
                     <p>
-                    {project.description}
+                      O AspNetCoreAPI é uma API simples feita em ASP.NET CORE 3.1 utilizando o Entity Framework como ORM, o projeto foi feito para fins de aprendizado. Conceitos como métodos http, migrations, CLI do dotnet, validações com base no modelo, padrão de CodeFirst, e SQL Server hospedado no AZURE foram aplicados de forma prática nesta solução.
                     </p>
                   <h3>O que aprendi</h3>
                     <p>
-                    {project.what_learned}
+                      No desenvolvimento do AspNetCoreAPI alguns conceitos foram colocados em prática, como o ASP.NET CORE MVC 3.1 API, Sistema de roteamento por controllers e por métodos HTTP, Validações com base em Model Padrão REST API, CLI do dotnet, Entity Framework (code-first), Conexão ao banco de dados utilizando SQL Server em nuvem, CRUD utilizando um ORM (Entity Framework)
                     </p>
                 </div>
 
                 <div class="col-6 text-left">
                   <h3>Tecnologias utilizadas</h3>
                   <ul class="list-group list-group-flush ulConhecimentos">
-                      <li class="list-group-item">{tech.title}</li>
+                      <li class="list-group-item">ASP.NET CORE MVC 3.1 API</li>
+                      <li class="list-group-item">CLI do dotnet</li>
+                      <li class="list-group-item">Entity Framework (code-first)</li>
+                      <li class="list-group-item">Conexão ao banco de dados utilizando SQL Server em nuvem</li>
+                      <li class="list-group-item">CRUD utilizando um ORM (Entity Framework)</li>
+                      <li class="list-group-item">C#</li>
                   </ul> 
                 </div>
+              </div>
 
+              <div class="row mobile-button">
+                  <a class="btn btn-primary mobile-button" href="https://github.com/rafaelmesquita-ceara"role="button">Pagina no GitHub</a>
               </div>
 
               <div class="row">
                 <h3>Mídia do projeto</h3>
                 <ul class="ulMidia">
-                      <li key={midia.id}>
-                        <a >
-                          <img />
+                  <li>
+                    <a href="./img/aspnetapi/Anotação 2020-07-16 225315.png">
+                      <img src="./img/aspnetapi/Anotação 2020-07-16 225315.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./img/aspnetapi/Anotação 2020-07-16 225335.png">
+                      <img src="./img/aspnetapi/Anotação 2020-07-16 225335.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./img/aspnetapi/Anotação 2020-07-16 225348.png">
+                      <img src="./img/aspnetapi/Anotação 2020-07-16 225348.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./img/aspnetapi/Anotação 2020-07-16 225358.png">
+                      <img src="./img/aspnetapi/Anotação 2020-07-16 225358.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./img/aspnetapi/Anotação 2020-07-16 225408.png">
+                      <img src="./img/aspnetapi/Anotação 2020-07-16 225408.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./img/aspnetapi/Anotação 2020-07-16 225418.png">
+                      <img src="./img/aspnetapi/Anotação 2020-07-16 225418.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./img/aspnetapi/Anotação 2020-07-16 225428.png">
+                      <img src="./img/aspnetapi/Anotação 2020-07-16 225428.png" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <br></br>
+            </div>
+            <br/>
+
+            <div class="container mb-5">
+              <div class="row">
+
+                <div class="col-6 projectMenu">
+                  <div class="row">
+                    <h2 class="col-9">BookListMVC</h2>
+                    <a class="btn btn-primary col-3 pc-button" href="https://github.com/rafaelmesquita-ceara/BookListMVC"role="button">Pagina no GitHub</a>
+                  </div>
+                  
+                  <h3>Descrição</h3>
+                    <p>
+                      O BookListMVC é um simples gerenciador de livros feito em ASP.NET CORE 2.1 utilizando o Entity Framework como ORM, o projeto foi feito para fins de aprendizado. Conceitos como requisições a API, Razor Pages, validações com base no modelo, padrão de CodeFirst, Ajax, Frameworks de webdesign e SQL Server foram aplicados de forma prática nesta solução.
+                    </p>
+                  <h3>O que aprendi</h3>
+                    <p>
+                      Aprendi muitos conceitos de MVC em Asp.NET Core utilizando C#, aprimorei minhas habilidades em HTML, CSS e Javascript e ainda aprendi sobre Razor Pages no Asp.NET
+                    </p>
+                </div>
+
+                <div class="col-6 text-left">
+                  <h3>Tecnologias utilizadas</h3>
+                  <ul class="list-group list-group-flush ulConhecimentos">
+                      <li class="list-group-item">ASP.NET CORE MVC 2.1</li>
+                      <li class="list-group-item">Sweet Alert (Alertas mais trabalhados e bonitos)</li>
+                      <li class="list-group-item">Data Tables (para criar tabelas interativas)</li>
+                      <li class="list-group-item">Toastr (Notificações Toast que mostram mensagens de sucesso ou erro vindas da api para o usuário)</li>
+                      <li class="list-group-item">Bootstrap (Biblioteca Html/CSS e Javascript para criação de layouts responsivos)</li>
+                      <li class="list-group-item">Entity Framework (code-first)</li>
+                      <li class="list-group-item">Migrations para gerar o banco de dados</li>
+                      <li class="list-group-item">Conexão ao banco de dados utilizando SQL SERVER</li>
+                      <li class="list-group-item">Conceito MVC</li>
+                      <li class="list-group-item">HTML/CSS/Javascript</li>
+                      <li class="list-group-item">Ajax</li>
+                      <li class="list-group-item">C#</li>
+                    </ul> 
+                </div>
+
+              </div>
+
+              <div class="row mobile-button">
+                <a class="btn btn-primary mobile-button" href="https://github.com/rafaelmesquita-ceara"role="button">Pagina no GitHub</a>
+              </div>
+
+              <div class="row">
+                <h3>Mídia do projeto</h3>
+                <ul class="ulMidia">
+                    <li>
+                      <a href="./img/aspnetmvc/Anotação 2020-07-16 230110.png">
+                        <img src="./img/aspnetmvc/Anotação 2020-07-16 230110.png" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./img//aspnetmvc/Anotação 2020-07-16 230139.png">
+                        <img src="./img//aspnetmvc/Anotação 2020-07-16 230139.png" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./img/aspnetmvc/Anotação 2020-07-16 230200.png">
+                        <img src="./img/aspnetmvc/Anotação 2020-07-16 230200.png" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./img/aspnetmvc/Anotação 2020-07-16 230219.png">
+                        <img src="./img/aspnetmvc/Anotação 2020-07-16 230219.png" />
+                      </a>
+                    </li>
+                </ul>
+              </div>
+              <br></br>
+            </div>
+            <br/>
+
+            <div class="container mb-5">
+              <div class="row">
+
+                <div class="col-6 projectMenu">
+
+                  <div class="row">
+                    <h2 class="col-9">Portifolium</h2>
+                    <a class="btn btn-primary col-3 pc-button" href="https://github.com/rafaelmesquita-ceara"role="button">Pagina no GitHub</a>
+                  </div>
+                  
+                  <h3>Descrição</h3>
+                    <p>
+                      Esse projeto tem como intuito de ajudar programadores que estão iniciando sua carreira como desenvolvedores a apresentarem um bom conteúdo sobre si mesmos com um layout bem definido, onde a única coisa que precisam fazer é cadastrar projetos e alimentar os seus portfólios. Essa aplicação foi feita em NodeJS com express no backend e ReactJS no frontend, foram utilizados conceitos de upload de arquivos com MulterJS, Axios para requisições na API e outras tecnologias.
+                    </p>
+                  <h3>O que aprendi</h3>
+                    <p>
+                      Com esse projeto, aprendi muito com ReactJS e aperfeiçoei meus conhecimentos, dando um toque de modernidade aos meus conhecimentos adquiridos em um curso. Também aprendi a utilizar um exemplo de upload de arquivos para mídias do projeto, melhorei minhas habilidades com HTML e CSS, fazendo layouts utilizando pouco as bibliotecas de UI (bootstrap, materialUI). Melhorei também em Design Patterns com ReactJS (organizando components)
+                    </p>
+                </div>
+
+                <div class="col-6 text-left">
+                  <h3>Tecnologias utilizadas</h3>
+                  <ul class="list-group list-group-flush ulConhecimentos">
+                      <li class="list-group-item">Node.JS</li>
+                      <li class="list-group-item">React.JS</li>
+                      <li class="list-group-item">Express.JS</li>
+                      <li class="list-group-item">Multer.JS</li>
+                      <li class="list-group-item">Material Icons</li>
+                      <li class="list-group-item">Bootstrap</li>
+                      <li class="list-group-item">Html/Css</li>
+                      <li class="list-group-item">Javascript</li>
+                    </ul> 
+                </div>
+
+              </div>
+
+              <div class="row mobile-button">
+                <a class="btn btn-primary mobile-button" href="https://github.com/rafaelmesquita-ceara"role="button">Pagina no GitHub</a>
+              </div>
+
+              <div class="row">
+                <h3>Mídia do projeto</h3>
+                <ul class="ulMidia">
+                      <li>
+                        <a href="./img/portfolium/Anotação 2020-07-16 224131.png">
+                          <img src="./img/portfolium/Anotação 2020-07-16 224131.png" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./img/portfolium/Anotação 2020-07-16 224221.png">
+                          <img src="./img/portfolium/Anotação 2020-07-16 224221.png" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./img/portfolium/Anotação 2020-07-16 224238.png">
+                          <img src="./img/portfolium/Anotação 2020-07-16 224238.png" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./img/portfolium/Anotação 2020-07-16 224259.png">
+                          <img src="./img/portfolium/Anotação 2020-07-16 224259.png" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./img/portfolium/Anotação 2020-07-16 224418.png">
+                          <img src="./img/portfolium/Anotação 2020-07-16 224418.png" />
                         </a>
                       </li>
                 </ul>
               </div>
               <br></br>
             </div>
-
     </div>
 
   </div>  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
 </html>
