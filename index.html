@@ -1,0 +1,82 @@
+<html>
+  <div class="ProfileProject">
+    <div class="projectBody">
+      <div class="Header">
+        <div>
+         <p>Sobre</p>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-4">
+            <img src='https://scontent.ffor1-2.fna.fbcdn.net/v/t1.0-9/p960x960/57198724_2620209094674670_4053217936393895936_o.jpg?_nc_cat=109&_nc_sid=85a577&_nc_ohc=GuIBZJ1tOgIAX-rzhsW&_nc_ht=scontent.ffor1-2.fna&_nc_tp=6&oh=deb82b61abecf4cb5186ee0979cf0f4c&oe=5F18AFB7'
+                alt="..."
+                class="img-thumbnail"/>
+            <a class="btn btn-primary mt-3" href="https://www.linkedin.com/in/rafael-mesquita-a59a631a6/" role="button">Perfil no LinkedIn</a>
+            <a class="btn btn-primary mt-3 float-right" href="https://github.com/rafaelmesquita-ceara" role="button">Perfil no GitHub</a>
+          </div>
+          <div class="col-8 text-left">
+            <h2>Quem sou eu?</h2>
+            <p>Olá! Me chamo Rafael, sou acadêmico de engenharia da computação pela Universidade Federal do Ceará,
+              Sobral (UFC). Atuando como freelancer desde 2018, desenvolvendo aplicações web e desktop para empresas de pequeno e médio porte.
+            </p>
+            <h2>Alguns dos meus conhecimentos técnicos:</h2>
+            <ul class="list-group list-group-flush ulConhecimentos">
+              <li class="list-group-item">C# (Windows Forms, Asp Net)</li>
+              <li class="list-group-item">SQL (Mysql, PostgreSQL, SQL Server)</li>
+              <li class="list-group-item">Node.JS (Padrão de API Rest e aplicações monolíticas)</li>
+              <li class="list-group-item">React.JS (Aplicações web Front End)</li>
+              <li class="list-group-item">Front end designer (HTML5, CSS3, Javascript)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="Header">
+        <div>
+         <p>Projetos</p>
+        </div>
+      </div>
+      
+            <div key={project.id} class="container mb-5">
+              <div class="row">
+
+                <div class="col-6 projectMenu">
+                <a class="btn btn-primary  mt-3 float-right" href="https://github.com/rafaelmesquita-ceara"role="button">Pagina no GitHub</a>
+                  <h2>{project.name}</h2>
+                  
+                  <h3>Descrição</h3>
+                    <p>
+                    {project.description}
+                    </p>
+                  <h3>O que aprendi</h3>
+                    <p>
+                    {project.what_learned}
+                    </p>
+                </div>
+
+                <div class="col-6 text-left">
+                  <h3>Tecnologias utilizadas</h3>
+                  <ul class="list-group list-group-flush ulConhecimentos">
+                      <li class="list-group-item">{tech.title}</li>
+                  </ul> 
+                </div>
+
+              </div>
+
+              <div class="row">
+                <h3>Mídia do projeto</h3>
+                <ul class="ulMidia">
+                      <li key={midia.id}>
+                        <a >
+                          <img />
+                        </a>
+                      </li>
+                </ul>
+              </div>
+              <br></br>
+            </div>
+
+    </div>
+
+  </div>  
+</html>
