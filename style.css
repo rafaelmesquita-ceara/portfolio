@@ -51,9 +51,14 @@
 .projectBody .ulMidia img{
   margin-top: 24px !important;
   width: 100% !important;
-  height: 200px !important;
+  height: 40vh !important;
   border-radius: 15px !important;
 }
+
+.img-thumbnail{
+  height: 100% !important;
+}
+
 
 @media (max-width: 600px) {                  
   .projectBody .ulMidia{
