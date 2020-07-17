@@ -1,7 +1,6 @@
 .projectBody{
   width: 90% !important;
   margin: 32px auto !important; 
-  padding : 0px 24px 24px 24px !important; /* top right bottom left */
   background: black !important;
   border-radius: 10px !important;
 }
@@ -103,6 +102,9 @@
 .projectBody .ulTech li p{
   width: 100px !important;
 
+}
+.container{
+  width: 100% !important;
 }
 h2{
   font-size: 22px !important;
