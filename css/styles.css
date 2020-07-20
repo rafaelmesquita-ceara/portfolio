@@ -309,6 +309,7 @@ html {
 }
 /*#endregion*/
 
+
 /*#region Services*/
 
 .parallaxServices {
@@ -364,6 +365,88 @@ html {
 @media only screen and (max-width: 800px) {
   .flexCenterServices ul{ 
     grid-template-columns: 1fr;
+  }
+
+}
+
+/*#endregion*/
+
+
+/*#region Projects*/
+
+.parallaxProjects {
+
+  /* Set a specific height */
+  height: 100%;
+  background-image:url('../img/530a746087d021696f38e010ff8c3112.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flexCenterProjects ul{ 
+  margin: 100px 50px 50px 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  grid-gap: 24px;
+  height: 100%;
+  
+}
+
+.flexCenterProjects ul li{
+  width: 40vw;
+  height: 450px;
+  display: flex;
+  background-color:rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.flexCenterProjects ul li div{
+  color: #edf0f1;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.flexCenterProjects ul li div img{
+  width: 100%;
+}
+
+.flexCenterProjects ul li div a{
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease 0s;
+}
+
+
+.flexCenterProjects ul li div a:hover {
+  color: #0088a9;
+}
+
+.flexCenterProjects ul li p{
+  color: #cccccc;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.flexCenterProjects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+@media only screen and (max-width: 800px) {
+  .flexCenterProjects ul{ 
+    grid-template-columns: 1fr;
+  }
+  .flexCenterProjects ul li{
+    width: 100%;
   }
 
 }
